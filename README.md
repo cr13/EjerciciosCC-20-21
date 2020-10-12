@@ -2,7 +2,7 @@
 
 Indice de ejercicios por temas
 
-* [Tema 1: Arquitecturas software para la nube](../master/README.md)
+* [Tema 1: Arquitecturas software para la nube](../master/tema1.md)
 * [Tema 2: Desarrollo basado en pruebas](../master/README.md)
 * [Tema 3: Microservicios](../master/README.md)
 * [Tema 4: Contenedores y cómo usarlos](../master/README.md)
