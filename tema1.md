@@ -12,6 +12,6 @@ Como evolución, se podría transformar nuestra arquitectura por una basada en m
 
 En la aplicación que se ha usado como ejemplo en el ejercicio anterior, ¿podría usar diferentes lenguajes? ¿Qué almacenes de datos serían los más convenientes?
 
-Se podrían estudiar si un lenguaje u otro ofrece mejor rendimiento en los distintos microservicio que se crearían para reemplazar los eventos.
+Se podrían utilizar varios lenguajes y ver si un lenguaje u otro ofrece mejor rendimiento en los distintos microservicio que se crearían para reemplazar los eventos.
 
 Por ejemplo el almacenamiento de datos mas conveniente podría ser una estructura no relacional y a tiempo real como Firebase para la gestión de las entradas, eventos disponibles y selección de asientos, y se podría utilizar otra base de datos relacional para la gestión de locales, gestión de usuarios, gestión contables... 
