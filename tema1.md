@@ -2,7 +2,7 @@
 
 ### 1º Ejercicio:
 
-***Buscar una aplicación de ejemplo, preferiblemente propia, y deducir qué patrón es el que usa. ¿Qué habría que hacer para evolucionar a un patrón tipo microservicios?***
+Buscar una aplicación de ejemplo, preferiblemente propia, y deducir qué patrón es el que usa. ¿Qué habría que hacer para evolucionar a un patrón tipo microservicios?
 
 En FP de grado superior realice una aplicación Web que consistente en la ventas de entradas, esta web estaba inspirada en la conocida aplicación ticketmaster, pero a pequeña escala, se puede consultar los distintos tipos de eventos, reservado y compra de entradas, además de poder seleccionar la disponibilidad de butacas en caso de existir la posibilidad. Estaba desarrollada principalmente en HTML, CSS, PHP y Jquery y para el almacenamiento de datos se usaba una de software libre que estaba comenzando Firebird.
 
@@ -10,7 +10,7 @@ Como evolución, se podría transformar nuestra arquitectura por una basada en m
 
 ### 2º Ejercicio:
 
-***En la aplicación que se ha usado como ejemplo en el ejercicio anterior, ¿podría usar diferentes lenguajes? ¿Qué almacenes de datos serían los más convenientes?***
+En la aplicación que se ha usado como ejemplo en el ejercicio anterior, ¿podría usar diferentes lenguajes? ¿Qué almacenes de datos serían los más convenientes?
 
 Se podrían estudiar si un lenguaje u otro ofrece mejor rendimiento en los distintos microservicio que se crearían para reemplazar los eventos.
 
