@@ -154,7 +154,6 @@ Ahora si ha pasado todos los test correctament.
 
 ![Activar travis en repositorio](img/t2/activate_travis_gestion_porras.png)
 
-
 #### 3º  Crear un fichero de configuración para que se ejecute la integración y añadirlo al repositorio.
 
 En el siguiente enlace podeis acceder al archivo de configuración creado [Archivo travis.yml](https://github.com/cr13/gestion_porras/blob/main/.travis.yml)
