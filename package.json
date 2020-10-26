@@ -1,0 +1,24 @@
+{
+  "name": "tema2_ejer2",
+  "version": "1.0.0",
+  "description": "Ejemplo de un fichero descriptivo de un modulo nodejs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cr13/EjerciciosCC-20-21.git"
+  },
+  "keywords": [
+    "CC",
+    "tema2",
+    "ejercicio2"
+  ],
+  "author": "Cristóbal Rodríguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cr13/EjerciciosCC-20-21/issues"
+  },
+  "homepage": "https://github.com/cr13/EjerciciosCC-20-21#readme"
+}
