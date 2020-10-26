@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/cr13/EjerciciosCC-20-21/issues"
   },
-  "homepage": "https://github.com/cr13/EjerciciosCC-20-21#readme"
+  "homepage": "https://github.com/cr13/EjerciciosCC-20-21#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
 }
