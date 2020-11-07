@@ -66,6 +66,29 @@ Dejo [información adicional](https://www.digitalocean.com/community/tutorials/h
 
 ### Ejercicio 3. Crear a partir del contenedor anterior una imagen persistente con commit.
 
+Para la realización de este ejercicio se va utilizar el siguiente comando:
+
+```bash
+
+docker commit <CONTAINER_ID> <nombre_image_persistente>
+
+```
+Comandos utilizados:
+
+```bash
+docker ps -ls
+
+docker run centos_cr13 # Opcional solo en caso de no tener ningun contenedor en ejecución.
+
+docker ps -ls
+
+docker commit e5dac17c8bb0 centos_cr13_commit
+
+docker images
+
+```
+![docker_commit](ejer3_docker_commit.png)
+
 ### Ejercicio 4. Examinar la estructura de capas que se forma al crear imágenes nuevas a partir de contenedores que se hayan estado ejecutando.
 
 ### Ejercicio 5. Crear un volumen y usarlo, por ejemplo, para escribir la salida de un programa determinado.
