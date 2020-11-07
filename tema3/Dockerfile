@@ -5,15 +5,12 @@ FROM centos:latest
 
 ## Instalamos NodeJS y npm
 #Descomentar para fedora
-
 #RUN sudo dnf install -y nodejs npm
 
 #Descomentar para alpine
-
 #RUN apk add --no-cache nodejs npm
 
 #Descomentar para centos
-
 RUN yum install -y nodejs npm
 
 #Creamos el directorio de trabajo
