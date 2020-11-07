@@ -2,6 +2,21 @@
 
 ### Ejercicio 1. Buscar alguna demo interesante de Docker y ejecutarla localmente, o en su defecto, ejecutar la imagen anterior y ver cómo funciona y los procesos que se llevan a cabo la primera vez que se ejecuta y las siguientes ocasiones.
 
+Para la realización de este ejercicio se va a utilizar la imagen [daleksay](https://hub.docker.com/r/jjmerelo/docker-daleksay/) vista anteriormente en los apuntes. 
+
+Si ejecutamos la imagen pasandole como argumentos **-f smiling-octopus Uso argumentos, ea** con este argumentos se consigue el contenedor actúe como el propio programa al que aísla.
+
+```bash
+docker run --rm jjmerelo/docker-daleksay -f smiling-octopus Uso argumentos, ea
+```
+
+![Ejecución de imagen docker delaksay](./img/t3/ejec_img_docker.png)
+
+Como se puede observar en la siguiente captura la primera vez que se ejecuta, comprueba si existe en el sistema de no existir se descarga la ultima versión existente. Y como resultado se ve el pulpo con un mensajito.
+
+Si se vulve a ejecutar como ya existe la imagen simplemente se ejecuta y se muestra al pulpo con su mensajito.
+
+
 ### Ejercicio 2. Tomar algún programa simple, “Hola mundo” impreso desde el intérprete de línea de órdenes, y comparar el tamaño de las imágenes de diferentes sistemas operativos base, Fedora, CentOS y Alpine, por ejemplo.
 
 ### Ejercicio 3. Crear a partir del contenedor anterior una imagen persistente con commit.
