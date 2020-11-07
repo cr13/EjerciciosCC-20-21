@@ -4,7 +4,7 @@
 
 Para la realización de este ejercicio se va a utilizar la imagen [daleksay](https://hub.docker.com/r/jjmerelo/docker-daleksay/) vista anteriormente en los apuntes. 
 
-Si ejecutamos la imagen pasandole como argumentos **-f smiling-octopus Uso argumentos, ea** con este argumentos se consigue el contenedor actúe como el propio programa al que aísla.
+Si ejecutamos la imagen pasandole como argumentos **-f smiling-octopus Uso argumentos, ea** , se consigue que el contenedor actúe como el propio programa al que aísla.
 
 ```bash
 docker run --rm jjmerelo/docker-daleksay -f smiling-octopus Uso argumentos, ea
