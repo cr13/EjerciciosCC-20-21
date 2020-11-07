@@ -87,7 +87,7 @@ docker commit e5dac17c8bb0 centos_cr13_commit
 docker images
 
 ```
-![docker_commit](ejer3_docker_commit.png)
+![docker_commit](./img/t3/ejer3_docker_commit.png)
 
 ### Ejercicio 4. Examinar la estructura de capas que se forma al crear imágenes nuevas a partir de contenedores que se hayan estado ejecutando.
 
