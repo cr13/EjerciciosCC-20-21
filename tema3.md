@@ -91,7 +91,29 @@ docker images
 
 ### Ejercicio 4. Examinar la estructura de capas que se forma al crear imágenes nuevas a partir de contenedores que se hayan estado ejecutando.
 
+Para la realización de este ejercicio vamos a necesitar instalar la herramienta jq.
+
+```bash
+ sudo apt  install jq
+```
+
+A continuación localizamos el SHA devuelto al crear la imagen persistente anterior y ejecutamos el siguiente comando:
+
+
+```bash
+
+sudo cat /var/lib/docker/image/overlay2/imagedb/content/sha256/b38113f64493b0eb3f0171898242eeb5d9103bbf1e23d2d4a136b261046e306b | jq .
+
+```
+
+El resultado de la ejecución es bastante largo por lo que en la imagen siguiente solo se mostrara el final, ya que es donde se encuentra el elemento **diff_ids** que contiene las capas que contiene la imagen.
+
+![Capas de  imagen centos_cr13_commit](./img/t3/ejer4_diff_estructuras_capas_image.png)
+
+
 ### Ejercicio 5. Crear un volumen y usarlo, por ejemplo, para escribir la salida de un programa determinado.
+
+
 
 ### Ejercicio 6. Usar un miniframework REST para crear un servicio web y introducirlo en un contenedor, y componerlo con un cliente REST que sea el que finalmente se ejecuta y sirve como “frontend”.
 
