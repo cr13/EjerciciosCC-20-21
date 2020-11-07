@@ -62,6 +62,8 @@ docker images
 
 Como podemos comprobar la imagen que menos ocupa es alpine con un tamaño de 54.8MB seguido de centos con 322MB y por ultimo fedora con 470MB.
 
+Dejo [información adicional](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes-es) para eliminar imagenes, conetendores o volumenes.
+
 ### Ejercicio 3. Crear a partir del contenedor anterior una imagen persistente con commit.
 
 ### Ejercicio 4. Examinar la estructura de capas que se forma al crear imágenes nuevas a partir de contenedores que se hayan estado ejecutando.
