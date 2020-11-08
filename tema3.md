@@ -135,7 +135,5 @@ docker-machine env maqVirtDocker
 
 eval $(docker-machine env maqVirtDocker)
 
-sudo -E docker pull jjmerelo/alpine-perl6
-
 docker run -d -p 80:3000 webappproject/user-service python app.py
 ```
