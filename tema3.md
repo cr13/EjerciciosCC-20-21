@@ -132,6 +132,9 @@ docker run --mount source=ejer5t3cc,destination=/prueba alpine_ejer5
 
 ### Ejercicio 7. Reproducir los contenedores creados anteriormente usando un Dockerfile
 
+Esto se ha realizado en el ejericio 5
+
+
 ### Ejercicio 8. Crear con docker-machine una máquina virtual local que permita desplegar contenedores y ejecutar en él contenedores creados con antelación.
 
 Para este ejercicio se ha tenido que instalar [docker-machine](https://docs.docker.com/engine/install/ubuntu/) en ubuntu, además de instalar los controladores de virtualbox en caso de no tener instalado virtualbox.
