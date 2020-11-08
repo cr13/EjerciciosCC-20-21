@@ -120,3 +120,22 @@ El resultado de la ejecución es bastante largo por lo que en la imagen siguient
 ### Ejercicio 7. Reproducir los contenedores creados anteriormente usando un Dockerfile
 
 ### Ejercicio 8. Crear con docker-machine una máquina virtual local que permita desplegar contenedores y ejecutar en él contenedores creados con antelación.
+
+Para este ejercicio se ha tenido que instalar [docker-machine](https://docs.docker.com/engine/install/ubuntu/) en ubuntu, además de instalar los controladores de virtualbox en caso de no tener instalado virtualbox.
+
+Una vez instalado procedemos a crear nuestra maquina virtual :
+
+```bash
+
+docker-machine create --driver virtualbox=maqVirtDocker
+
+docker-machine ls
+
+docker-machine env maqVirtDocker
+
+eval $(docker-machine env maqVirtDocker)
+
+sudo -E docker pull jjmerelo/alpine-perl6
+
+docker run -d -p 80:3000 webappproject/user-service python app.py
+```
