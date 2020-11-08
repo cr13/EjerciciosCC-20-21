@@ -113,8 +113,21 @@ El resultado de la ejecución es bastante largo por lo que en la imagen siguient
 
 ### Ejercicio 5. Crear un volumen y usarlo, por ejemplo, para escribir la salida de un programa determinado.
 
+Creamos un pequeño programa para escribir en un fichero y nos creamos un nuevo Dockerfile. [VER](./tema3/ejer5/)
 
+```bash
+#Se crea un nuevo volumen
+docker volume create ejer5t3cc
+#Comprobamos que se ha creado con exito
+docker volume list
+#Se crea la imagen alpine con la aplicacion creada
+docker build --no-cache -t alpine_ejer5 -f Dockerfile .
+#se ejecuta la imagen en el volumen especificado
+docker run --mount source=ejer5t3cc,destination=/prueba alpine_ejer5
 
+```
+![](./img/t3/ejer5_docker_new_image.png)
+![](./img/t3/ejer5_docker_run_in_volumen.png)
 ### Ejercicio 6. Usar un miniframework REST para crear un servicio web y introducirlo en un contenedor, y componerlo con un cliente REST que sea el que finalmente se ejecuta y sirve como “frontend”.
 
 ### Ejercicio 7. Reproducir los contenedores creados anteriormente usando un Dockerfile
