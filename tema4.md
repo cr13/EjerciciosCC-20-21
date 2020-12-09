@@ -14,3 +14,5 @@ En el siguiente enlace podeis acceder al archivo de configuración creado [Archi
 A continuación se muestra la ejecución del test pasado con exito.
 
 ![Test travis superado](img/t2/test_travis.png)
+
+### Ejercicio 2: Configurar integración continua para nuestra aplicación usando Travis o algún otro sitio.
