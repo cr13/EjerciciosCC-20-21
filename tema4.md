@@ -15,9 +15,9 @@ En el siguiente enlace podeis acceder al archivo de configuración creado [Archi
 
 ### Ejercicio 2: Configurar integración continua para nuestra aplicación usando Travis o algún otro sitio.
 
+<a name="Estado_de_travis"></a>
 En el ejercicio anterior se ha creado y configurado el archivo de configuración. Como muestra de ello se puede ver el estado actual de lso test realizados al proyecto.
 
-<a name="Estado_de_travis"></a>
 ![Estado de travis](img/t2/test_travis_state.png)
 
 Ejecución del test pasado con exito.
@@ -36,4 +36,4 @@ Para obtener el enlace de la etiqueta solo debemos pulsar en la etiqueta **build
 
 Resultado de etiqueta en README:
 
-![Etiqueta de estado de test realizados por travis](img/t2/test_travis.png)
+![Etiqueta de estado de test realizados por travis](img/t2/etiqueta_travis.png)
