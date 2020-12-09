@@ -11,8 +11,29 @@
 
 En el siguiente enlace podeis acceder al archivo de configuración creado [Archivo travis.yml](https://github.com/cr13/gestion_porras/blob/main/.travis.yml)
 
-A continuación se muestra la ejecución del test pasado con exito.
+![Configuración travis](img/t2/config_travis.png)
+
+### Ejercicio 2: Configurar integración continua para nuestra aplicación usando Travis o algún otro sitio.
+
+En el ejercicio anterior se ha creado y configurado el archivo de configuración. Como muestra de ello se puede ver el estado actual de lso test realizados al proyecto.
+
+<a name="Estado_de_travis"></a>
+![Estado de travis](img/t2/test_travis_state.png)
+
+Ejecución del test pasado con exito.
 
 ![Test travis superado](img/t2/test_travis.png)
 
-### Ejercicio 2: Configurar integración continua para nuestra aplicación usando Travis o algún otro sitio.
+También se puede añadir una etiqueta en el README del proyecto para de un simple vistazo saber si ha fallado o ha pasado con exito los test realizados a través de travis.
+
+Para obtener el enlace de la etiqueta solo debemos pulsar en la etiqueta **build/passing** que aparece en el [estado del proyecto en travis](./#Estado_de_travis).
+
+```bash
+# Linea que hay que añadir al readme
+[![Build Status](https://travis-ci.org/cr13/gestion_porras.svg?branch=main)](https://travis-ci.org/cr13/gestion_porras)
+
+```
+
+Resultado de etiqueta en README:
+
+![Etiqueta de estado de test realizados por travis](img/t2/test_travis.png)
