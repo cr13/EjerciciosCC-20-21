@@ -26,7 +26,7 @@ Ejecución del test pasado con exito.
 
 También se puede añadir una etiqueta en el README del proyecto para de un simple vistazo saber si ha fallado o ha pasado con exito los test realizados a través de travis.
 
-Para obtener el enlace de la etiqueta solo debemos pulsar en la etiqueta **build/passing** que aparece en el [estado del proyecto en travis](./#Estado_de_travis).
+Para obtener el enlace de la etiqueta solo debemos pulsar en la etiqueta **build/passing** que aparece en el [estado del proyecto en travis](#Estado_de_travis).
 
 ```bash
 # Linea que hay que añadir al readme
