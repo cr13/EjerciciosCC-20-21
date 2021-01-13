@@ -1,0 +1,16 @@
+{
+  "name": "pruebat6",
+  "version": "1.0.0",
+  "description": "prueba para utilizar etcd3",
+  "main": "app.js",
+ "scripts": {
+  "start": "node app.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "author": "Cristobal Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "etcd3": "^1.1.0",
+    "express": "^4.17.1"
+  }
+}

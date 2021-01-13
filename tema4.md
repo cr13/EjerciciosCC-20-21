@@ -24,11 +24,11 @@ Ejecución del test pasado con exito.
 
 ![Test travis superado](img/t2/test_travis.png)
 
-También se puede añadir una etiqueta en el README del proyecto para de un simple vistazo saber si ha fallado o ha pasado con exito los test realizados a través de travis. Y en caso de fallo poder pinchar y te lleva a travis para ver el log.
+También se puede añadir el badge en el README del proyecto para de un simple vistazo saber si ha fallado o ha pasado con exito los test realizados a través de travis. Y en caso de fallo poder pinchar y te lleva a travis para ver el log.
 
-Para obtener el enlace de la etiqueta solo debemos pulsar en la etiqueta **build/passing** que aparece en el [estado del proyecto en travis](#Estado_de_travis) y seleccionamos el formato que queramos, en nuestro caso Markdown.
+Para obtener el enlace del badge solo debemos pulsar en el badge **build/passing** que aparece en el [estado del proyecto en travis](#Estado_de_travis) y seleccionamos el formato que queramos, en nuestro caso Markdown.
 
-![Obtener etiqueta travis](img/t2/obtener_etiq_travis.png)
+![Obtener badge travis](img/t2/obtener_etiq_travis.png)
 
 
 ```bash
