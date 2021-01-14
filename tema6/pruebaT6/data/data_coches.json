@@ -1,8 +1,8 @@
 {
-    "marcas": [
+    "coches": [
         {
             "id": 1,
-            "nombre": "Audi",
+            "marca": "Audi",
             "modelos": [
                 "A5",
                 "A3",
@@ -22,7 +22,7 @@
         },
         {
             "id": 2,
-            "nombre": "BMW",
+            "marca": "BMW",
             "modelos": [
                 "Serie 6",
                 "Serie 7",
@@ -53,7 +53,7 @@
         },
         {
             "id": 3,
-            "nombre": "Chevrolet",
+            "marca": "Chevrolet",
             "modelos": [
                 "Alto",
                 "Astra",
@@ -177,7 +177,7 @@
         },
         {
             "id": 4,
-            "nombre": "Citroen",
+            "marca": "Citroen",
             "modelos": [
                 "Xsara",
                 "Picasso",
@@ -205,7 +205,7 @@
         },
         {
             "id": 5,
-            "nombre": "Daihatsu",
+            "marca": "Daihatsu",
             "modelos": [
                 "Charade",
                 "Charmant",
@@ -221,7 +221,7 @@
         },
         {
             "id": 6,
-            "nombre": "Dodge",
+            "marca": "Dodge",
             "modelos": [
                 "Coronet",
                 "Dart",
@@ -244,7 +244,7 @@
         },
         {
             "id": 7,
-            "nombre": "Fiat",
+            "marca": "Fiat",
             "modelos": [
                 "Zastava",
                 "Idea",
@@ -276,7 +276,7 @@
         },
         {
             "id": 8,
-            "nombre": "Ford",
+            "marca": "Ford",
             "modelos": [
                 "Fusion",
                 "Crown",

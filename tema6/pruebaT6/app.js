@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express();
 const morgan = require('morgan');
-const cars = require('./data/data_coches.json');
+// const cars = require('./data/data_coches.json');
+const dataRoutes = require('./routes/cars');
 
 const { Etcd3 } = require('etcd3');
 const client = new Etcd3();
@@ -17,12 +18,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 
-//Routes
-app.get("/cars", (req, res) => {
-    res.json(cars);
-});
-
-
 async function showEnvironment() {
     const results = await client.getAll();
     console.log(`All Keys from etcd server `, results);
@@ -32,6 +27,22 @@ async function getPort() {
     const port = await client.get('pruebat6port');
     return port;
 }
+
+
+//Routes
+app.use(dataRoutes);
+
+app.use(function (request, response) {
+    response.status(400);
+    response.json({
+        error: {
+            name: "Error",
+            message: "Debe acceder a la ruta: /cars",
+        },
+    });
+});
+
+
 
 
 (async () => {
@@ -46,5 +57,6 @@ async function getPort() {
 })
 
 
+module.exports = app;
 
 

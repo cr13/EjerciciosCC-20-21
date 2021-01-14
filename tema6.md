@@ -131,7 +131,7 @@ async function getPort() {
 Para la verificación del funcionamiento correcto del servicio, arrancamos el servicio con **npm start**
 
 Como se puede apreciar vemos en la siguiente captura, gracias al Middlewares Morgan podemos ver las peticiones gets que se realizan:
- 
+
 ![lanzamiento y log con morgan](./img/t6/ejer2_log_morgan.png)
 
 
@@ -146,6 +146,27 @@ O también podemos comprobarlo haciendo una petición get desde postman.
 
 
 ### Ejercicio 3: Programar un microservicio en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.
+
+Siguiendo con la aplicación de los ejercicios anteriores, vamos a ampliar el funcionamiento.
+
+Se va ha crear un fichero para las rutas y se van añadir dos rutas nuevas.
+
+Se ha mantenido la ruta que muestra toda la estructura de datos:
+
+- GET /cars
+
+Las dos nuevas añadidas son:
+Utilizando la petición GET  se va a devolver el coche cuyo id pasemos como parámetro. Asegurando nos de que el id exista y sino existe devolvemos un código 404 con un mensaje.
+
+- GET /cars/<id>
+
+Utilizando una petición POST creamos un nuevo coche cuyos datos se pasaran por parámetro.
+
+- POST /cars/<id>/<marca>/<[modelos]> 
+
+
+![app de prueba post y get](./img/t6/prueba_ejer3.png)
+
 
 ### Ejercicio 4: Crear pruebas para las diferentes rutas de la aplicación.
 
