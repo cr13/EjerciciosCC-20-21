@@ -74,9 +74,9 @@ let port = process.env.port || 3320;
 Para la realización de este ejercicios vamos a continuar con la aplicación creada en el ejercicio anterior.
 Lo primero que se ha hecho a sido buscar una estructura de datos, se ha elegido una estructura de marca y modelos de coches que ha sido obtenida de [aquí](https://gist.github.com/AnndresRodriguez/a4216e3f82f45fc4514dc954f967fe9a)
 
-Lo siguiente que vamos a hacer es instalar un Middleware para registrar las solicitudes HTTP (**[Morgan]**(https://www.npmjs.com/package/morgan)) y una herramienta para facilitar el desarrollo de la aplicación (**[Nodemon]**(https://www.npmjs.com/package/nodemon)).
+Lo siguiente que vamos a hacer es instalar un Middleware para registrar las solicitudes HTTP ([**Morgan**](https://www.npmjs.com/package/morgan)) y una herramienta para facilitar el desarrollo de la aplicación ([**Nodemon**](https://www.npmjs.com/package/nodemon)).
 
-Una vez instalados modificamos el código, quedandonos el siguiente resultado:
+Una vez instalados modificamos el código, quedando nos el siguiente resultado:
 
 ```bash
 var express = require('express');
