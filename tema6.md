@@ -128,7 +128,14 @@ async function getPort() {
 
 ```
 
-Para la verificación del funcionamiento correcto del servicio, arrancamos el servicio con **npm start** y desde el navegador accedemos a http://localhost:3008/cars
+Para la verificación del funcionamiento correcto del servicio, arrancamos el servicio con **npm start**
+
+Como se puede apreciar vemos en la siguiente captura, gracias al Middlewares Morgan podemos ver las peticiones gets que se realizan:
+ 
+![lanzamiento y log con morgan](./img/t6/ejer2_log_morgan.png)
+
+
+Comprobación desde el navegador accedemos a http://localhost:3008/cars
 
 ![app de prueba](./img/t6/ejer2.png)
 
