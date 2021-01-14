@@ -29,7 +29,7 @@ router.post("/cars/:id/:marca/:modelos", (req, res) => {
     });
     res.status(200);
     res.send({
-        marcas: cars.coches[id - 1],
+        coches: cars.coches[id - 1],
         message: "Coche POST ok",
     });
 });
