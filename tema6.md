@@ -71,6 +71,72 @@ let port = process.env.port || 3320;
 
 ### Ejercicio 2: Realizar una aplicación básica que use algún microframework para devolver alguna estructura de datos del modelo que se viene usando en el curso u otra que se desee. La intención de este ejercicio es simplemente que se vea el funcionamiento básico de un microframework, especialmente si es alguno que, como **express**, tiene un generador de código. Se puede usar, por otro lado, el lenguaje y microframework que se desee.
 
+Para la realización de este ejercicios vamos a continuar con la aplicación creada en el ejercicio anterior.
+Lo primero que se ha hecho a sido buscar una estructura de datos, se ha elegido una estructura de marca y modelos de coches que ha sido obtenida de [aquí](https://gist.github.com/AnndresRodriguez/a4216e3f82f45fc4514dc954f967fe9a)
+
+Lo siguiente que vamos a hacer es instalar un Middleware para registrar las solicitudes HTTP (**[Morgan]**(https://www.npmjs.com/package/morgan)) y una herramienta para facilitar el desarrollo de la aplicación (**[Nodemon]**(https://www.npmjs.com/package/nodemon)).
+
+Una vez instalados modificamos el código, quedandonos el siguiente resultado:
+
+```bash
+var express = require('express');
+var app = express();
+const morgan = require('morgan');
+const cars = require('./data/data_coches.json');
+
+const { Etcd3 } = require('etcd3');
+const client = new Etcd3();
+
+// Settings
+let port = process.env.port || 3320;
+app.set('json spaces', 2);
+
+
+//Middlewares
+app.use(morgan('dev'));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
+
+//Routes
+app.get("/cars", (req, res) => {
+    res.json(cars);
+});
+
+
+async function showEnvironment() {
+    const results = await client.getAll();
+    console.log(`All Keys from etcd server `, results);
+}
+
+async function getPort() {
+    const port = await client.get('pruebat6port');
+    return port;
+}
+
+
+(async () => {
+    await showEnvironment();
+    port = await getPort();
+})().then(() => {
+
+    app.listen(port, function () {
+        console.log(`Aplicación ejemplo, escuchando en http://localhost:${port}/cars`);
+    });
+
+})
+
+```
+
+Para la verificación del funcionamiento correcto del servicio, arrancamos el servicio con **npm start** y desde el navegador accedemos a http://localhost:3008/cars
+
+![app de prueba](./img/t6/ejer2.png)
+
+O también podemos comprobarlo haciendo una petición get desde postman.
+
+![app de prueba postman](./img/t6/ejer2_postman.png)
+
+
 
 ### Ejercicio 3: Programar un microservicio en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.
 
