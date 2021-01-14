@@ -149,7 +149,7 @@ O también podemos comprobarlo haciendo una petición get desde postman.
 
 Siguiendo con la aplicación de los ejercicios anteriores, vamos a ampliar el funcionamiento.
 
-Se va ha crear un [fichero]() para las rutas y se van añadir dos rutas nuevas.
+Se va ha crear un [fichero](./tema6/pruebaT6/routes/cars.js) para las rutas y se van añadir dos rutas nuevas.
 
 Se ha mantenido la ruta que muestra toda la estructura de datos:
 
@@ -171,7 +171,7 @@ Ejemplo de utilización:
 
 ### Ejercicio 4: Crear pruebas para las diferentes rutas de la aplicación.
 
-Para la realización de las pruebas se va a utilizar [mocha](https://mochajs.org/) y [supertest](https://www.npmjs.com/package/supertest). Además se va a crear un  [fichero]() con los siguientes test.
+Para la realización de las pruebas se va a utilizar [mocha](https://mochajs.org/) y [supertest](https://www.npmjs.com/package/supertest). Además se va a crear un [fichero](./tema6/pruebaT6/test/test.js) con los siguientes test.
 
 ```bash
 
@@ -307,3 +307,35 @@ Otros comandos interesantes son:
 
 
 ### Ejercicio 6: Usar **rake**, **invoke** o la herramienta equivalente en tu lenguaje de programación para programar diferentes tareas que se puedan lanzar fácilmente desde la línea de órdenes un microservicio.
+
+Para la realización de este ejercicio se va utilizar el gestor de tareas Grunt visto en el temario.
+
+Para ello vamos a instalarlo y algunos plugins
+
+```bash
+    #Instalar paquete grunt
+    npm install grunt-cli
+ 
+    #plugins
+    npm install grunt-run
+    npm install grunt-mocha-test
+
+```
+
+Una vez que tenemos todo instalado creamos el fichero [Gruntfile.js](./tema6/pruebaT6/Gruntfile.js).
+
+En este fichero se van a definir 4 tareas:
+
+1. Para lanzar los test utilizando mocha.
+2. Crear una instancia del servicio utilizando PM2. 
+3. Parar la instancia creada.
+4. Eliminar instancia creada.
+
+Ejemplo de uso:
+
+![ejemplo uso grunt test](./img/t6/ejer6_grunt_test.png)
+
+![ejemplo uso grunt pm2](./img/t6/ejer6_grunt_pm2.png)
+
+
+
