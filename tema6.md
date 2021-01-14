@@ -149,7 +149,7 @@ O también podemos comprobarlo haciendo una petición get desde postman.
 
 Siguiendo con la aplicación de los ejercicios anteriores, vamos a ampliar el funcionamiento.
 
-Se va ha crear un fichero para las rutas y se van añadir dos rutas nuevas.
+Se va ha crear un [fichero]() para las rutas y se van añadir dos rutas nuevas.
 
 Se ha mantenido la ruta que muestra toda la estructura de datos:
 
@@ -170,6 +170,61 @@ Ejemplo de utilización:
 
 
 ### Ejercicio 4: Crear pruebas para las diferentes rutas de la aplicación.
+
+Para la realización de las pruebas se va a utilizar mocha y supertest. Además se va a crear un  [fichero]() con los siguientes test.
+
+```bash
+
+var request = require("supertest");
+app = require("./app.js");
+
+
+describe("Coches", () => {
+    describe("GET", () => {
+        it("Deberia devolver una lista con todos los coches", (done) => {
+            request(app)
+                .get("/cars")
+                .expect("Content-Type", /json/)
+                .expect(200, done);
+        });
+    });
+});
+
+describe("Un solo coche", () => {
+    describe("GET", () => {
+        it("Deberia devolver un solo coche", (done) => {
+            request(app)
+                .get("/cars/0")
+                .expect("Content-Type", /json/)
+                .expect(200, done);
+        });
+    });
+});
+
+describe("Un nuevo Coche", () => {
+    describe("POST", () => {
+        it("Deberia crear un nuevo coche", (done) => {
+            request(app)
+                .post("/cars/9/BENTLEY/['Continental GT', 'Mulsanne', 'Flying Spur', 'Continental GTC', 'Bentayga']")
+                .expect("Content-Type", /json/)
+                .expect(200, done);
+        });
+    });
+});
+
+```
+
+Para su ejecución:
+
+```bash 
+
+npm test
+
+``` 
+
+![pasando los test](./img/t6/prueba_test_ejer4.png)
+
+
 
 ### Ejercicio 5: Experimentar con diferentes gestores de procesos y servidores web front-end para un microservicio que se haya hecho con antelación, por ejemplo en la sección anterior.
 
