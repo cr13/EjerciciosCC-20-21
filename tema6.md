@@ -171,7 +171,7 @@ Ejemplo de utilización:
 
 ### Ejercicio 4: Crear pruebas para las diferentes rutas de la aplicación.
 
-Para la realización de las pruebas se va a utilizar mocha y supertest. Además se va a crear un  [fichero]() con los siguientes test.
+Para la realización de las pruebas se va a utilizar [mocha](https://mochajs.org/) y [supertest](https://www.npmjs.com/package/supertest). Además se va a crear un  [fichero]() con los siguientes test.
 
 ```bash
 
@@ -227,5 +227,83 @@ npm test
 
 
 ### Ejercicio 5: Experimentar con diferentes gestores de procesos y servidores web front-end para un microservicio que se haya hecho con antelación, por ejemplo en la sección anterior.
+
+Los gestores de procesos y servidores web que se van a probar son [**Forever**](https://www.npmjs.com/package/forever) y [**PM2**](https://www.npmjs.com/package/pm2).
+
+Lo primero que debemos hacer es instalar el paquete Forever de forma global.
+
+```bash 
+    npm install -g forever
+```
+
+Comandos básicos:
+
+
+```bash 
+    # Para inicializar el gestor forever
+    forever start ./app.js
+
+    # Para listar los procesos activos
+    forever list
+
+    # Para parar todos los procesos 
+    forever stopall
+```
+Si los ejecutamos obtenemos los siguientes resultados:
+
+![ejemplo uso forever](./img/t6/forever_ejer5.png)
+
+
+Ahora vamos a probar **PM2**, el cuál debemos instalar también:
+
+```bash 
+    npm install -g pm2
+```
+
+Comandos básicos:
+
+
+```bash 
+    # Para inicializar el gestor pm2
+    pm2 start ./app.js # El nombre de la instancia sera el nombre de la app
+    # ó
+    pm2 start ./app.js --name "coches" # Se especifica nombre de la instancia
+
+    # Parar la instancia
+    pm2 stop app # En caso de no asignar nombre 
+    pm2 stop coches #En caso de haber asignado un nombre
+
+    # Se puede relanzar las instancias existentes
+    pm2 reload app
+
+    #Para eliminar una instancias
+    pm2 delete app
+
+```
+
+Si los ejecutamos obtenemos los siguientes resultados:
+
+![ejemplo uso pm2](./img/t6/pm2_ejer5_inicio.png)
+
+Otros comandos interesantes son:
+
+```bash 
+    # Crear varias instancias al inicializar
+     pm2 start ./app.js --name "coches" -i 3
+
+    # Mostrar información de las instancias
+    pm2 describe coches
+
+
+```
+
+![ejemplo uso pm2](./img/t6/pm2_ejer5_otros.png)
+
+![ejemplo uso pm2](./img/t6/pm2_ejer5_otros2.png)
+
+
+
+
+
 
 ### Ejercicio 6: Usar **rake**, **invoke** o la herramienta equivalente en tu lenguaje de programación para programar diferentes tareas que se puedan lanzar fácilmente desde la línea de órdenes un microservicio.
