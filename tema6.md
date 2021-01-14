@@ -158,12 +158,13 @@ Se ha mantenido la ruta que muestra toda la estructura de datos:
 Las dos nuevas añadidas son:
 Utilizando la petición GET  se va a devolver el coche cuyo id pasemos como parámetro. Asegurando nos de que el id exista y sino existe devolvemos un código 404 con un mensaje.
 
-- GET /cars/<id>
+- GET /cars/id
 
 Utilizando una petición POST creamos un nuevo coche cuyos datos se pasaran por parámetro.
 
-- POST /cars/<id>/<marca>/<[modelos]> 
+- POST /cars/id/marca/[modelos]
 
+Ejemplo de utilización:
 
 ![app de prueba post y get](./img/t6/prueba_ejer3.png)
 
