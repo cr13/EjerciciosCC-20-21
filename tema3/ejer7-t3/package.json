@@ -1,0 +1,19 @@
+{
+  "name": "Ejer7",
+  "version": "1.0.0",
+  "description": "Ejercicio de prueba ",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristobal Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-router": "^0.0.1",
+    "fastify": "^3.10.1",
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0"
+  }
+}

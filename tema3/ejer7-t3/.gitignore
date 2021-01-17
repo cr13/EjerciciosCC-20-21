@@ -1,0 +1,9 @@
+
+# Dependency directories
+node_modules
+
+# npm cache directory
+.npm
+
+# variables de entorno
+.env
