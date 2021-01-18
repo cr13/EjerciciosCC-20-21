@@ -16,6 +16,14 @@ etcdctl member list
 
 ![etcd3 verificacion funcionamiento](./img/t6/etcd3_verifiacion.png)
 
+No olvidar realizar el export para que funcione correctamente el cliente.
+
+```bash
+
+export ETCDCTL_API=3
+
+```
+
 Para realizar un ejemplo del almacenamiento de una clave valor, vamos a almacenar el puerto donde vamos a ejecutar el servicio. Para ello:
 
 ```bash
@@ -24,6 +32,9 @@ etcdctl put pruebaT6port 3008
 
 
 ```
+
+Volver a realizar el primer paso.
+
 Aplicación creada en el entorno nodeJS y utilizando el framework express.
 
 ```bash
