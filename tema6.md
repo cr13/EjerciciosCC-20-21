@@ -33,8 +33,6 @@ etcdctl put pruebaT6port 3008
 
 ```
 
-Volver a realizar el primer paso.
-
 Aplicación creada en el entorno nodeJS y utilizando el framework express.
 
 ```bash
