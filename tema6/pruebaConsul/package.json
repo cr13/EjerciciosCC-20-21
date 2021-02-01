@@ -1,0 +1,14 @@
+{
+  "name": "pruebat6consul",
+  "version": "1.0.0",
+  "description": "prueba para utilizar consul",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Cristobal Rodriguez",
+  "license": "ISC",
+  "devDependencies": {
+    "consul": "^0.39.0"
+  }
+}

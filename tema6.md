@@ -347,4 +347,50 @@ Ejemplo de uso:
 ![ejemplo uso grunt pm2](./img/t6/ejer6_grunt_pm2.png)
 
 
+<a name="consul"></a>
+
+### Ejercicio Adicional:  Instalar consul, averiguar qué bibliotecas funcionan bien con el lenguaje que estemos escribiendo el proyecto (u otro lenguaje), y hacer un pequeño ejemplo de almacenamiento y recuperación de una clave desde la línea de órdenes.
+
+Para la instalación de consul, podemos seguir las instrucciones de su [página web](https://learn.hashicorp.com/tutorials/consul/get-started-install?in=consul/getting-started)
+
+Una vez instalado verificamos, comprobando la versión, por ejemplo.
+
+![Verificación consul](./img/t6/ejerAd_consul_version.png)
+
+Una vez verificado, necesitamos ejecutar el agente para poder empezar a trabajar con consul.
+
+```bash
+
+consul agent -dev
+
+```
+
+La biblioteca que funciona bien con el lenguaje utilizado para mi proyecto es el paquete npm [consul](https://www.npmjs.com/package/consul), puesto que mi proyecto se esta realizando con NodeJS.
+
+Como ejemplo, vamos a almacenar el puerto y el host de acceso y lo vamos a recuperar desde una pequeña aplicación en NodeJS.
+
+Para crear las claves con el puerto y el host vamos a ejecutar lo siguiente:
+
+```bash
+
+#Para crear las claves ejecutamos
+# consul kv put <name key> <key>
+
+consul kv put puertoConsul 3007
+
+consul kv put hostConsul localhost
+
+# Para recuperar las claves desd consola podemos ejecutar
+
+consul kv get puertoConsul
+
+consul kv get hostConsul
+
+```
+
+Una vez, creadas las claves solo tenemos que crear el pequeño [programa](./tema6/pruebaConsul/app.js), el cual va a consistir en recuperar las claves y imprimirlas por consola. A continuación podemos ver el ejemplo ejecutado:
+
+
+![ejecución de programa](./img/t6/ejemploConsul.png)
+
 
