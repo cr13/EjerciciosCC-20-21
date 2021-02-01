@@ -365,6 +365,14 @@ consul agent -dev
 
 ```
 
+Para detener el agente debemos ejecutar:
+
+```bash
+
+consul leave
+
+```
+
 La biblioteca que funciona bien con el lenguaje utilizado para mi proyecto es el paquete npm [consul](https://www.npmjs.com/package/consul), puesto que mi proyecto se esta realizando con NodeJS.
 
 Como ejemplo, vamos a almacenar el puerto y el host de acceso y lo vamos a recuperar desde una pequeña aplicación en NodeJS.
